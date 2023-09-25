@@ -1,0 +1,105 @@
+// @import '../index.css';
+:root {
+    --main-0: #f9fafa;
+    --main-1: #eef0f1;
+    --main-2: #d2d6db;
+    --main-3: #b5bdc4;
+    --main-4: #99a3ad;
+    --main-5: #7d8a97;
+    --main-6: #64707d;
+    --main-7: #4d5760;
+    --main-8: #363d44;
+    --main-9: #202428;
+
+    --main-a: rgba(8, 9, 10, 0.05);
+
+    --main-theme: #3b49df;
+    --main-theme-darker: #1827ce;
+    --main-theme-lighter: #8d95f2;
+
+    --theme-background: #eef0f1;
+    --font-color: #08090a;
+
+    --site-width: 1280px;
+
+    --header-height: 56px;
+    --header-bg: #fff;
+}
+
+// .hidden {
+//     display: none;
+// }
+
+.leftBar {
+    position: relative;
+
+    .hidden {
+        display: none;
+    }
+
+
+    &__taglist {
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        // background-color: #4070f4;
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem;
+            padding-right: 0;
+
+
+            h3 {
+                font-size: 1rem;
+                color: var(--main-9);
+            }
+
+            i {
+                padding: 0.5rem;
+                margin-right: 1rem;
+                color: var(--main-6);
+                font-size: 1.5rem;
+                cursor: pointer;
+                border-radius: 5px;
+
+                &:hover {
+                    color: var(--main-9);
+                    background-color: var(--main-a);
+                }
+            }
+
+        }
+
+        ul {
+            height: 60vh;
+            overflow-y: auto;
+            margin-right: 0.75rem;
+            line-height: 1.6;
+
+
+            li {
+                padding: 0.5rem;
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: var(--main-8);
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--main-theme-darker);
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--main-a);
+
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
